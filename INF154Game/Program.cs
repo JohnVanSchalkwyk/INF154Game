@@ -10,6 +10,8 @@ namespace INF154Game
     {
         static void Main(string[] args)
         {
+            
+            //
         }
     }
 }
