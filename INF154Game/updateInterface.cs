@@ -18,7 +18,7 @@ namespace INF154Game
         {
             string userChoice = " ";
             Console.WriteLine("Welcome to INF154 game ");
-            userChoice = promptChoice();
+            
 
         }
         public string promptChoice()
