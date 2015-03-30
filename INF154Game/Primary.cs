@@ -11,6 +11,7 @@ namespace INF154Game
         static void Main(string[] args)
         {
             setRace test = new setRace();
+
             test.raceMain();
 
 
