@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace INF154Game
 {
-    class Program
+    public class Primary
     {
         static void Main(string[] args)
         {
-            
-            //
+            setRace test = new setRace();
+            test.raceMain();
+
+
         }
     }
 }
