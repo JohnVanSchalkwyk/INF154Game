@@ -60,6 +60,7 @@
     <Compile Include="Primary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="setRace.cs" />
+    <Compile Include="updateInterface.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
