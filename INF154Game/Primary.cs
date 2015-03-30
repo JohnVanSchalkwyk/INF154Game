@@ -10,9 +10,10 @@ namespace INF154Game
     {
         static void Main(string[] args)
         {
-            setRace test = new setRace();
-            test.raceMain();
-
+            drawInterface draw = new drawInterface();
+            draw.drawCollumm(0, 0, 0, 0, 0, 0, 0, 55, 0);
+            draw.drawResourceMatrix(7, 7, 7);
+     
 
         }
     }
