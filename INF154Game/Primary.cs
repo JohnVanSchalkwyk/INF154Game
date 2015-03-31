@@ -10,13 +10,10 @@ namespace INF154Game
     {
         static void Main(string[] args)
         {
-            updateInterface a = new updateInterface();
-            a.welcomeMessage();
+            userCom firstContact = new userCom();
+            firstContact.welcomeMessage();
 
-
-            setCursor pos = new setCursor();
-            
-         
+          
      
 
         }

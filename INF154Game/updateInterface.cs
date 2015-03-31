@@ -14,22 +14,7 @@ namespace INF154Game
         
 
     }
-        public void welcomeMessage()
-        {
-          
-            Console.WriteLine("Welcome to INF154 game ");
-            
-
-        }
-        public string promptChoice()
-        {
-            Console.WriteLine("Select your race (Human, Orc, Elve and Cyborg)");
-            string choice = Console.ReadLine();
-            setRace a = new setRace();
-            string final = a.selectRace(choice);
-            return final;
-
-        }
+      
         
         
         

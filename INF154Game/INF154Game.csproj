@@ -62,6 +62,7 @@
     <Compile Include="setCursor.cs" />
     <Compile Include="setRace.cs" />
     <Compile Include="updateInterface.cs" />
+    <Compile Include="userCom.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
