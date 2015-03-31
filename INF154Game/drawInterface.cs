@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace INF154Game
 {
-    public class drawInterface
+    class drawInterface
     {
        private int s_House_Building
                 , m_House_Building

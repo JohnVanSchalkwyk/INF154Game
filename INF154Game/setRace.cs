@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace INF154Game
 {
-    public class setRace
+    class setRace
     {
         private string setHuman()
         {

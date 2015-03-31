@@ -16,7 +16,7 @@ namespace INF154Game
     }
         public void welcomeMessage()
         {
-            string userChoice = " ";
+          
             Console.WriteLine("Welcome to INF154 game ");
             
 
