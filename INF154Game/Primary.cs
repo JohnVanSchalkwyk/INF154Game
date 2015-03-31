@@ -11,7 +11,7 @@ namespace INF154Game
         static void Main(string[] args)
         {
             drawInterface draw = new drawInterface();
-            draw.drawCollumm(0, 0, 0, 0, 0, 0, 0, 55, 0);
+            draw.drawCollumm(0, 0, 0, 0, 0, 0, 0, 5, 0);
             draw.drawResourceMatrix(7, 7, 7);
 
 
