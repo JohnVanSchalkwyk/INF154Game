@@ -17,7 +17,7 @@ namespace INF154Game
             setCursor cursor = new setCursor();
             welcome = "Are you ready for an experience of your life?(Y/N)";
             stringSize = welcome.Length;
-            cursor.WriteAt("", 0, 0);
+            cursor.WriteAt("", 0, 0);     //Bringing the console back to the first line
             typeWriterEffectReverse(welcome, stringSize);
 
             
@@ -54,7 +54,7 @@ namespace INF154Game
             
             for (int i = b-1; i >= 0; i--)
             {
-                cursor.WriteAt("", col,0);
+                cursor.WriteAt("", col,0); //Setting the console to start at the end of the column and work its way forward
                 col--;
                 
                 Console.Write(a[i]);
