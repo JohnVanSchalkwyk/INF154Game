@@ -14,16 +14,19 @@ namespace INF154Game
             raceDescription describe_Race = new raceDescription();
             userCom firstContact = new userCom();
             setCursor cursor = new setCursor();
-            /*
-            describe_Race.describeHuman();
-            describe_Race.describeOrc();
-            describe_Race.describeElf();
-            describe_Race.describeCyborg();
-             */
+
+            draw.setConoleSize();
             draw.drawCollumm(0, 0, 0, 0, 0, 0, 0, 5, 0);
             draw.drawResourceMatrix(7, 7, 7);
-            cursor.WriteAt("", 40, 0);
-            firstContact.welcomeMessage();
+            cursor.WriteAt("*",40,0);
+            //describe_Race.describeHuman();
+            //describe_Race.describeOrc();
+            //describe_Race.describeElf();
+            //describe_Race.describeCyborg();
+
+            
+            //cursor.WriteAt("", 40, 0); 
+            //firstContact.welcomeMessage();
             
 
         }
