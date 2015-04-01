@@ -43,12 +43,12 @@ namespace INF154Game
            
 
            }
-           else if(userRace == "CYBORGS")
+           else if(userRace == "CYBORG")
            {
                race = setCyborg();
                
            }
-           else if(userRace == "ELVES")
+           else if(userRace == "ELF")
            {
                race = setElves();
              

@@ -27,7 +27,10 @@ namespace INF154Game
         }
         public string promptChoice()
         {
-            Console.WriteLine("Select your race (Human, Orc, Elve and Cyborg)");
+            setCursor b = new setCursor();
+            b.WriteAt("Select your race (Human, Orc, Elve and Cyborg)\n",5,2);
+            
+            
             string choice = Console.ReadLine();
             choice = choice.ToUpper();
             setRace a = new setRace();
