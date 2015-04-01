@@ -8,8 +8,8 @@ namespace INF154Game
 {
     class setCursor
     {
-        protected  int origRow;     //Co-ordinates of the screen
-        protected  int origCol;
+        protected  int origRow = 0;     //Co-ordinates of the screen
+        protected  int origCol = 0;
 
         public void WriteAt(string s, int x, int y)
         {
