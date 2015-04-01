@@ -18,12 +18,12 @@ namespace INF154Game
             draw.setConoleSize();
             draw.drawCollumm(0, 0, 0, 0, 0, 0, 0, 5, 0);
             draw.drawResourceMatrix(7, 7, 7);
-            cursor.WriteAt("*",40,0);
+            
             //describe_Race.describeHuman();
             //describe_Race.describeOrc();
-            //describe_Race.describeElf();
+            describe_Race.describeElf();
             //describe_Race.describeCyborg();
-
+            Console.ReadLine();
             
             //cursor.WriteAt("", 40, 0); 
             //firstContact.welcomeMessage();
