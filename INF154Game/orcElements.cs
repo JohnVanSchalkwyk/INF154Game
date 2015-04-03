@@ -6,8 +6,28 @@ using System.Threading.Tasks;
 
 namespace INF154Game
 {
-    class orcElements : basicRaceElements
+    public class orcElements : basicRaceElements
     {
+        private double hungerLevelDepreciationRate;
+        private double labourPointReductionRate;
+
+        public orcElements()
+            : base()
+        {
+            hungerLevelDepreciationRate = 0.3;
+            labourPointReductionRate = 0.15;
+        }
+
+        public double getHungerLevelDepreciationRate()
+        {
+            return hungerLevelDepreciationRate;
+        }
+
+        public double getLabourPointReductionRate()
+        {
+            return labourPointReductionRate;
+        }
+        
     }
 }
  

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace INF154Game
 {
-    class basicRaceElements
+    public class basicRaceElements
     {
         private int labourPointStart;
         private int populationStart;

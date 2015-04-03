@@ -6,7 +6,26 @@ using System.Threading.Tasks;
 
 namespace INF154Game
 {
-    class cyborgELements:basicRaceElements
+    public class cyborgELements:basicRaceElements
     {
+        private double labourPointSubstitutionDecrease;
+        private double resourceDepreciationRate;
+
+        public cyborgELements()
+            :base()
+        {
+            labourPointSubstitutionDecrease = 0.5;
+            resourceDepreciationRate = 0.2;
+        }
+
+        public double getLabourPointSubstitutionDecrease()
+        {
+            return labourPointSubstitutionDecrease;
+        }
+
+        public double getResourceDepreciationRate()
+        {
+            return resourceDepreciationRate;
+        }
     }
 }

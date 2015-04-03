@@ -6,7 +6,27 @@ using System.Threading.Tasks;
 
 namespace INF154Game
 {
-    class humanElements : basicRaceElements
+    public class humanElements : basicRaceElements
     {
+        private double labourPointGenerationIncrease;
+        private int populationSizeIncrease;
+
+       public humanElements()
+           :base()
+        {
+            labourPointGenerationIncrease = 0.2;
+            populationSizeIncrease = 100;
+
+        }
+
+       public double getLabourPointGenerationIncrease()
+       {
+           return labourPointGenerationIncrease;
+       }
+
+       public double getPopulationSizeIncrease()
+       {
+           return populationSizeIncrease;
+       }
     }
 }
