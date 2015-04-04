@@ -12,7 +12,6 @@ namespace INF154Game
         {
             userCom e = new userCom();
             e.welcomeMessage();
-            e.promptChoice();
 
           
      

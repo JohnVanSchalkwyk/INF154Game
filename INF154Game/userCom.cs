@@ -10,15 +10,30 @@ namespace INF154Game
     {
         public void welcomeMessage()
         {
+            setCursor cursor = new setCursor();
             string welcome = "Welcome to INF 154";
             int stringSize = welcome.Length;
             typeWriterEffect(welcome, stringSize);
 
-            setCursor cursor = new setCursor();
-            welcome = "Are you ready for an experience of your life?(Y/N)";
+            
+            welcome = "Are you ready for an experience of your life?";
             stringSize = welcome.Length;
-            cursor.WriteAt("", 0, 0);     //Bringing the console back to the first line
             typeWriterEffectReverse(welcome, stringSize);
+            cursor.WriteAt("", 0, 3);
+            welcome = "Let's begin with the formalities shall we...";
+            stringSize = welcome.Length;
+            Console.WriteLine();
+            typeWriterEffect(welcome, stringSize);
+            cursor.WriteAt("",5,3);
+            welcome = "In the beginning there was a town, a town in ruins.";
+            stringSize = welcome.Length;
+            typeWriterEffect(welcome, stringSize);
+            cursor.WriteAt("", 5, 5);
+            welcome = "Shattered by civil war and broken by rival factions.";
+            stringSize = welcome.Length;
+            typeWriterEffect(welcome, stringSize);
+
+
 
             
             
