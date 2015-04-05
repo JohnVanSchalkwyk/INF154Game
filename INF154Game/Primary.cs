@@ -10,8 +10,7 @@ namespace INF154Game
     {
         static void Main(string[] args)
         {
-            userCom e = new userCom();
-            e.welcomeMessage();
+            
 
           
      
