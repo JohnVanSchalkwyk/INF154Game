@@ -85,6 +85,18 @@ namespace INF154Game
             Console.WriteLine(" |   Rounds           |       " + roundsTotal + "       |");
             Console.WriteLine(" --------------------------------------");
         }
+
+        public void setConoleSize() // Set the size of the console window to a fixed position and size.
+        {
+            int origWidth, width;
+            int origHeight, height;
+            origWidth = Console.WindowWidth;
+            origHeight = Console.WindowHeight;
+            width = 150;
+            height = 37;
+            Console.SetWindowSize(width, height);
+        }
+
     }
 
 }

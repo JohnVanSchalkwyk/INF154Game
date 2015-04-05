@@ -56,7 +56,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="basicRaceElements.cs" />
+    <Compile Include="cyborgELements.cs" />
     <Compile Include="drawInterface.cs" />
+    <Compile Include="elfElements.cs" />
+    <Compile Include="humanElements.cs" />
+    <Compile Include="orcElements.cs" />
     <Compile Include="Primary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="raceDescription.cs" />
