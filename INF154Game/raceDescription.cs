@@ -44,7 +44,34 @@ namespace INF154Game
             Console.WriteLine("With this evolutionary advance they suffer no penalty upon staring the game.");
             cursor.WriteAt("", 42, 14);
             Console.WriteLine("----------------------------------------------------------------------------");
-            //==================================================================================================
+          
+         
+            cursor.WriteAt("", 42, 19);
+            Console.WriteLine("                                /                                  ");
+            cursor.WriteAt("", 42, 20);
+            Console.WriteLine("                             ,-/ / / -,                                  ");
+            cursor.WriteAt("", 42, 21);
+            Console.WriteLine("                          ,`  / / / /  `,                                   ");
+            cursor.WriteAt("", 42, 22);
+            Console.WriteLine("                         /     / / /                                        ");
+            cursor.WriteAt("", 42, 23);
+            Console.WriteLine("                        ,=_     / /    _=,                                  ");
+            cursor.WriteAt("", 42, 24);
+            Console.WriteLine("                        |  '_    /   _'  |                                  ");
+            cursor.WriteAt("", 42, 25);
+            Console.WriteLine("                        |_   ''-..-''   _|                                  ");
+            cursor.WriteAt("", 42, 26);
+            Console.WriteLine("                        | '-.        .-' |                                  ");
+            cursor.WriteAt("", 42, 27);
+            Console.WriteLine("                        |    '     /'    |                                  ");
+            cursor.WriteAt("", 42, 28);
+            Console.WriteLine("                        |      |  |      |                                  ");
+            cursor.WriteAt("", 42, 29);
+            Console.WriteLine("                        '_     |  |     _'                                  ");
+            cursor.WriteAt("", 42, 30);
+            Console.WriteLine("                         -'-.  |  |  .-'-                                   ");
+            cursor.WriteAt("", 42, 31);
+            //=================================================================================================
         }
         public void describeOrc()
         {

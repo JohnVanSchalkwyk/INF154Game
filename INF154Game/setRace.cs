@@ -8,6 +8,7 @@ namespace INF154Game
 {
     class setRace
     {
+        setCursor cursor = new setCursor();
         private string setHuman()
         {
             return "Human";
@@ -64,6 +65,6 @@ namespace INF154Game
 
 
 
-        }
+  }
         
-    }
+}

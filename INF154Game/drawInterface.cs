@@ -8,18 +8,20 @@ namespace INF154Game
 {
     class drawInterface
     {
-       private int s_House_Building
-                , m_House_Building
-                , r_House_Building
-                , tavern_Building
-                , inn_Building
-                , portal_Building
-                , dna_Building
-                , reasurch_Building
-                , substinance_Building
-                , total_Rounds
-                , total_LP
-                , total_Population;
+        protected int introPromptSizeFromStart = 42, introPromptSizeBounds = 108;
+        protected int introCenteredBorderStart = 25, introCenterBorderBounds = 124;
+        private int s_House_Building
+                 , m_House_Building
+                 , r_House_Building
+                 , tavern_Building
+                 , inn_Building
+                 , portal_Building
+                 , dna_Building
+                 , reasurch_Building
+                 , substinance_Building
+                 , total_Rounds
+                 , total_LP
+                 , total_Population;
 
         public drawInterface()
         {
@@ -28,14 +30,14 @@ namespace INF154Game
             r_House_Building = 0;
             tavern_Building = 0;
             inn_Building = 0;
-            portal_Building = 0; 
+            portal_Building = 0;
             dna_Building = 0;
             reasurch_Building = 0;
             substinance_Building = 0;
             total_Rounds = 0;
             total_LP = 0;
             total_Population = 0;
-            
+
         }
 
 
@@ -86,7 +88,7 @@ namespace INF154Game
             Console.WriteLine(" --------------------------------------");
         }
 
-        public void setConoleSize() // Set the size of the console window to a fixed position and size.
+        public void setConsoleSize() // Set the size of the console window to a fixed position and size.
         {
             int origWidth, width;
             int origHeight, height;
@@ -97,6 +99,52 @@ namespace INF154Game
             Console.SetWindowSize(width, height);
         }
 
-    }
+        public void intro()
+        {
+            userCom typeEffect = new userCom();
+            setCursor cursor = new setCursor();
+            cursor.WriteAt("----------------------------------------------------------------------------------------------------\n", introCenteredBorderStart, 0);
+            cursor.WriteAt("++++++++++++++++++++++++++++++ Welcome to Epic Build Challenge RPG +++++++++++++++++++++++++++++++++\n", introCenteredBorderStart, 1);
+            cursor.WriteAt("--------------------------", introCenteredBorderStart, 2);
+            //cursor.WriteAt(" ", 52, 2);
+            typeEffect.typeWriterEffect("Prepare for a journey of a lifetime...",52,2);
+            cursor.WriteAt("---------------------------------\n", 92, 2);
+            cursor.WriteAt("|", introCenteredBorderStart, 3);
+            cursor.WriteAt("|", introCenterBorderBounds, 3);
+            cursor.WriteAt("+", introCenteredBorderStart, 4);
+            cursor.WriteAt("+", introCenterBorderBounds, 4);
+            cursor.WriteAt("____________________________________________________________________________________________________\n", introCenteredBorderStart, 5);
+            cursor.WriteAt("-------------------------------------------------------------------\n", introPromptSizeFromStart, 6);
+            for (int i = 7; i < 20; i++)
+            {
+                cursor.WriteAt("|", introCenteredBorderStart, i);
+                cursor.WriteAt("|", introPromptSizeFromStart, i);
 
+            }
+            for (int i = 7; i < 20; i++)
+            {
+                cursor.WriteAt("|", introCenterBorderBounds, i);
+                cursor.WriteAt("|", introPromptSizeBounds, i);
+
+            }
+            typeEffect.typeWriterEffect("A long time ago, there existed a race of beings.\n", ((introPromptSizeFromStart+10)),8);
+            
+            
+
+
+
+
+
+            //Console.Write()
+            //Console.Write();
+            //Console.Write();
+            //Console.Write();
+            //Console.Write();
+            //Console.Write();
+            //Console.Write();
+            //Console.Write();
+
+        }
+    }
 }
+

@@ -61,6 +61,7 @@
     <Compile Include="drawInterface.cs" />
     <Compile Include="elfElements.cs" />
     <Compile Include="humanElements.cs" />
+    <Compile Include="introEffects.cs" />
     <Compile Include="orcElements.cs" />
     <Compile Include="Primary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

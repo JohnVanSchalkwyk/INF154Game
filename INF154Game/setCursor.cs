@@ -25,5 +25,10 @@ namespace INF154Game
                 Console.WriteLine(e.Message);
             }
         }
+
+        internal void WriteAt(string line, int p)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
