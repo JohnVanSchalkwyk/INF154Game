@@ -21,9 +21,9 @@ namespace INF154Game
             draw.drawResourceMatrix(7, 7, 7);
             
             
-            //describe_Race.describeHuman();
+            describe_Race.describeHuman();
             //describe_Race.describeOrc();
-            describe_Race.describeElf();
+            //describe_Race.describeElf();
             //describe_Race.describeCyborg();
             Console.ReadLine();
             

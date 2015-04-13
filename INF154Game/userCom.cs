@@ -20,10 +20,6 @@ namespace INF154Game
             cursor.WriteAt("", 0, 0);
             typeWriterEffectReverse(welcome, stringSize);
 
-            
-            
-
-
         }
         public string promptChoice()
         {
