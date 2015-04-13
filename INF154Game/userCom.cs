@@ -46,9 +46,9 @@ namespace INF154Game
         {
             setCursor cursor = new setCursor();
             int size = a.Length;
-            int col = (x-1);
+            int col = x;
             
-            for (int i = size; i >= 0; i--)
+            for (int i = (size-1); i >= 0; i--)
             {
                 cursor.WriteAt("", col,y); //Setting the console to start at the end of the column and work its way forward
                 col--;

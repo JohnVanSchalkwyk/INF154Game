@@ -18,7 +18,26 @@ namespace INF154Game
             drawInterface intro = new drawInterface();
 
             setsize.setConsoleSize();
-            intro.intro();
+            bool continueSequence = intro.intro();
+
+            if(continueSequence)
+            {
+                bool tutorial = intro.tutorialSelect();
+                if(tutorial)
+                {
+                    draw.drawCollumm(0, 0, 0, 0, 0, 0, 0, 0, 0);
+                    draw.drawResourceMatrix(0, 0, 0);
+                    draw.tutorialDisplay();
+                }
+                else
+                {
+
+                }
+            }
+            else
+            {
+               //Quit Game
+            }
             //draw.drawCollumm(0, 0, 0, 0, 0, 0, 0, 0, 0);
             //draw.drawResourceMatrix(0, 0, 0);
             //describe_Race.describeHuman();
