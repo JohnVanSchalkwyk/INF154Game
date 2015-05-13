@@ -148,7 +148,8 @@ namespace INF154Game
             typeEffect.typeWriterEffect("All that remained was a graveyard spread upon ruins.\n", (introPromptSizeFromStart+7), 13);
             typeEffect.typeWriterEffect("A single person rose to the challenge, 'You oh gracious one!'", (introPromptSizeFromStart+5), 14);
             typeEffect.typeWriterEffect("So begins our journey...", (introPromptSizeFromStart + 20), 16);
-            cursor.WriteAt("Do you accept this challenge?[Yes/No]",(introPromptSizeFromStart + 7), 23);
+            cursor.WriteAt("Do you accept this challenge?[Yes/No]",(introPromptSizeFromStart + 12), 23);
+            cursor.WriteAt("", (introPromptSizeFromStart + 29), 24);
             string continuePrompt = Console.ReadLine();
             continuePrompt = continuePrompt.ToUpper();
 
@@ -189,7 +190,8 @@ namespace INF154Game
 
             }
 
-            cursor.WriteAt("Would you like to see the tutorial?[Yes/No]", (introPromptSizeFromStart + 15), 15);
+            cursor.WriteAt("Would you like to see the tutorial?[Yes/No]", (introPromptSizeFromStart + 12), 15);
+            cursor.WriteAt("", (introPromptSizeFromStart + 29), 16);
             string choice = Console.ReadLine();
             choice = choice.ToUpper();
 
@@ -229,16 +231,18 @@ namespace INF154Game
             drawInterface draw = new drawInterface();
 
             drawTutBox(5,15);
-            cursor.WriteAt("This is the resource tracker, to keep track of your buildings.", (introPromptSizeFromStart + 2), 8);
-            cursor.WriteAt("[Press Enter to continue]", (introPromptSizeFromStart + 16), 10);
+            cursor.WriteAt("This is the resource tracker, to keep track of your buildings.", (introPromptSizeFromStart + 2),8);
+            cursor.WriteAt("[Press Enter to continue]", (introPromptSizeFromStart + 20), 10);
             Console.ReadKey();
             Console.Clear();
             draw.drawCollumm(0, 0, 0, 0, 0, 0, 0, 0, 0);
             draw.drawResourceMatrix(0, 0, 0);
             drawTutBox(25,35);
-            cursor.WriteAt("Here we have our resource monitor", (introPromptSizeFromStart + 15), 28);
+            cursor.WriteAt("Here we have our resource monitor", (introPromptSizeFromStart + 18), 28);
             cursor.WriteAt("this HUD helps you manage your spending", (introPromptSizeFromStart + 15), 29);
             cursor.WriteAt("[Press Enter to continue]", (introPromptSizeFromStart + 20), 30);
+            Console.ReadKey();
+            Console.Clear();
            
             
             
@@ -247,6 +251,7 @@ namespace INF154Game
 
 
         }
+
     }
 }
 

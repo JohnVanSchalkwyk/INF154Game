@@ -28,6 +28,10 @@ namespace INF154Game
                     draw.drawCollumm(0, 0, 0, 0, 0, 0, 0, 0, 0);
                     draw.drawResourceMatrix(0, 0, 0);
                     draw.tutorialDisplay();
+
+                    draw.drawCollumm(0, 0, 0, 0, 0, 0, 0, 0, 0);
+                    draw.drawResourceMatrix(0, 0, 0);
+
                 }
                 else
                 {
