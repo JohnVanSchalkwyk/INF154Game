@@ -20,10 +20,10 @@ namespace INF154Game
             setsize.setConsoleSize();
             bool continueSequence = intro.intro();
 
-            if(continueSequence)
+            if (continueSequence)
             {
                 bool tutorial = intro.tutorialSelect();
-                if(tutorial)
+                if (tutorial)
                 {
                     draw.drawCollumm(0, 0, 0, 0, 0, 0, 0, 0, 0);
                     draw.drawResourceMatrix(0, 0, 0);
@@ -40,25 +40,8 @@ namespace INF154Game
             }
             else
             {
-               //Quit Game
+                //Quit Game
             }
-            //draw.drawCollumm(0, 0, 0, 0, 0, 0, 0, 0, 0);
-            //draw.drawResourceMatrix(0, 0, 0);
-            //describe_Race.describeHuman();
-
-
-            
-            /*//describe_Race.describeHuman();
-            //describe_Race.describeOrc();
-            describe_Race.describeElf();
-            //describe_Race.describeCyborg();
-            
-            cursor.WriteAt("", 0, 0);
-            draw.drawCollumm(0, 0, 0, 0, 0, 0, 0, 5, 0);
-            draw.drawResourceMatrix(7, 7, 7);
-            cursor.WriteAt("", 40, 0);
-            cursor.WriteAt("", 100, 30); */
-        
             
 
         }
